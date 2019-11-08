@@ -1,0 +1,28 @@
+GET http://localhost:3000/courses
+
+###
+
+GET http://localhost:3000/courses/5db672020b02d52350618c97
+
+###
+
+POST http://localhost:3000/courses
+Content-Type: application/json
+
+{
+    "name": "Test",
+    "holes": [ {"number": 1, "par": 3} ]
+}
+
+###
+
+DELETE http://localhost:3000/courses/5db672020b02d52350618c97
+
+###
+
+PATCH http://localhost:3000/courses/5db672020b02d52350618c97
+Content-Type: application/json
+
+{
+    "name": "Test2"
+}
